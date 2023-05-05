@@ -6,9 +6,9 @@ export default function Home() {
   const [checked, setChecked] = useState(false);
   return (
     <>
-    <main
+    <Container
     className="flex  h-screen w-screen items-center justify-center">
-      <main1 className="w-128 h-128 bg-slate-200">
+      <Items className="w-128 h-128 bg-slate-200">
         <div   className='flex flex-col items-center h-20' >
              <Image
               src="/logo.svg"
@@ -18,8 +18,8 @@ export default function Home() {
             />
             </div>
             <div className="flexjustify-center  items-center w-128 h-27">
-            <bar className="flex bg-shadow w-128 h-27 rounded-t-md" >
-              <account>
+            <Bar className="flex bg-shadow w-128 h-27 rounded-t-md" >
+              <Account>
               <Image
                src="/account.svg"
                alt="account"
@@ -34,10 +34,10 @@ export default function Home() {
                height={20}
                className="pt-1 ml-35.5px "
                />
-               </account>   
+               </Account>   
                <Image src="/line.svg" alt="line" width={133}
                height={0} className="pb-6" />          
-               <personal>
+               <Personal>
                <Image
                src="/personal.svg"
                alt="personal"
@@ -52,10 +52,10 @@ export default function Home() {
                height={20}
                className="pt-1 mr-8"
                />
-               </personal>
+               </Personal>
                <Image src="/line.svg" alt="line" width={133}
                height={0}  className="pb-6"/>
-               <billing>
+               <Billing>
                 <Image
                src="/billing.svg"
                alt="billing"
@@ -70,10 +70,10 @@ export default function Home() {
                height={20}
                className="pt-1"
                />
-               </billing>
+               </Billing>
                <Image src="/line.svg" alt="line" width={133}
                height={0}  className="pb-6"/>
-               <done>
+               <Done>
                 <Image
                src="/done.svg"
                alt="done"
@@ -88,9 +88,9 @@ export default function Home() {
                height={20}
                className="pt-1"
                />
-               </done>
+               </Done>
 
-               </bar>
+               </Bar>
                </div>
               <div className="flex flex-col w-128 h-128 p-x12">
             <Image
@@ -226,8 +226,8 @@ export default function Home() {
             /> 
               </button>
        </div>
-       </main1>
-       </main>
+       </Items>
+       </Container>
        </>
   )
 }
