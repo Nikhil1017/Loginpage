@@ -5,10 +5,9 @@ export default function Home() {
   const [inputValue, setInputValue] = useState('');
   const [checked, setChecked] = useState(false);
   return (
-    <>
-    <Container
+    <container
     className="flex  h-screen w-screen items-center justify-center">
-      <Items className="w-128 h-128 bg-slate-200">
+      <items className="w-128 h-128 bg-slate-200">
         <div   className='flex flex-col items-center h-20' >
              <Image
               src="/logo.svg"
@@ -18,8 +17,8 @@ export default function Home() {
             />
             </div>
             <div className="flexjustify-center  items-center w-128 h-27">
-            <Bar className="flex bg-shadow w-128 h-27 rounded-t-md" >
-              <Account>
+            <bar className="flex bg-shadow w-128 h-27 rounded-t-md" >
+              <account>
               <Image
                src="/account.svg"
                alt="account"
@@ -34,10 +33,10 @@ export default function Home() {
                height={20}
                className="pt-1 ml-35.5px "
                />
-               </Account>   
+               </account>   
                <Image src="/line.svg" alt="line" width={133}
                height={0} className="pb-6" />          
-               <Personal>
+               <personal>
                <Image
                src="/personal.svg"
                alt="personal"
@@ -52,10 +51,10 @@ export default function Home() {
                height={20}
                className="pt-1 mr-8"
                />
-               </Personal>
+               </personal>
                <Image src="/line.svg" alt="line" width={133}
                height={0}  className="pb-6"/>
-               <Billing>
+               <billing>
                 <Image
                src="/billing.svg"
                alt="billing"
@@ -70,10 +69,10 @@ export default function Home() {
                height={20}
                className="pt-1"
                />
-               </Billing>
+               </billing>
                <Image src="/line.svg" alt="line" width={133}
                height={0}  className="pb-6"/>
-               <Done>
+               <done>
                 <Image
                src="/done.svg"
                alt="done"
@@ -88,9 +87,9 @@ export default function Home() {
                height={20}
                className="pt-1"
                />
-               </Done>
+               </done>
 
-               </Bar>
+               </bar>
                </div>
               <div className="flex flex-col w-128 h-128 p-x12">
             <Image
@@ -175,11 +174,11 @@ export default function Home() {
     <label className="ml-12">
       <input
         type="checkbox"
-        className="mt-26px"
+        className="mt-26px h-5 w-5"
         checked={checked}
         onChange={() => setChecked(!checked)}
       />
-      <span className="font-sans font-medium text-base not-italic tracking-minus0.1px text-gray-1 ml-3">I accept the Terms and Privacy Policy</span>
+      <span className="font-sans font-medium text-base not-italic tracking-minus0.1px text-gray-1 ml-3 -mt-7px">I accept the Terms and Privacy Policy</span>
     </label>
         </div>
         <div>
@@ -188,7 +187,7 @@ export default function Home() {
               alt="name"
               width={128}
               height={12}
-              className="mt-6 ml-1"
+              className="mt-6 "
               
             />
         <form>
@@ -226,8 +225,7 @@ export default function Home() {
             /> 
               </button>
        </div>
-       </Items>
-       </Container>
-       </>
+       </items>
+       </container>
   )
 }
