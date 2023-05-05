@@ -6,7 +6,7 @@ export default function Home() {
   const [checked, setChecked] = useState(false);
   return (
     <>
-    <container
+    <main
     className="flex  h-screen w-screen items-center justify-center">
       <items className="w-128 h-128 bg-slate-200">
         <div   className='flex flex-col items-center h-20' >
@@ -227,7 +227,7 @@ export default function Home() {
               </button>
        </div>
        </items>
-       </container>
+       </main>
        </>
   )
 }
