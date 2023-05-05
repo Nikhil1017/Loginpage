@@ -7,6 +7,9 @@ module.exports = {
   ],
   
   theme: {
+    fontSize: {
+      '15px':['15px','22px'],
+    },
     letterSpacing: {
       'minus0.1px':'-0.1px',
     },
@@ -32,6 +35,8 @@ module.exports = {
         '18.17px':'18.17px',
         '26px':'26px',
         '3px':'3px',
+        '46px':'46px',
+        '504px':'504px',
   
     },
     spacing:{

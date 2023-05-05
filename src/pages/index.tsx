@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React, { useState } from 'react';
-import Button from '../components/Button';
 
 export default function Home() {
   const [inputValue, setInputValue] = useState('');
@@ -194,7 +193,7 @@ export default function Home() {
             />
         <form>
         <label>
-        <input type="text" className="border rounded-md mt-2 w-268px h-46px ml-1  border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+        <input type="text" className="border rounded-md mt-2 w-268px h-46px -ml-0.5 border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
         
         <Image
               src="/question.svg"
@@ -213,10 +212,19 @@ export default function Home() {
               height={12}
               className="ml-1 -mt-2.5"
               
-            />
-            
+            />       
        </div>
        </div>
+       <button>
+       <Image
+              src="nextbutton.svg"
+              alt="name"
+              width={96}
+              height={46}
+              className="mt-46px ml-504px"
+              
+            /> 
+              </button>
        </div>
        </items>
        </container>
