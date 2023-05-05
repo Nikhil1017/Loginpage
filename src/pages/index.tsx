@@ -6,16 +6,14 @@ export default function Home() {
   const [checked, setChecked] = useState(false);
   return (
     <div
-    className="flex  h-screen w-screen items-center justify-center">
-      <div className="w-128 h-128 bg-slate-200">
-        <div   className='flex flex-col items-center h-20' >
+    className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className=" flex flex-col w-128 h-128 justify-center items-center">
              <Image
               src="/logo.svg"
               alt="Lookscout Logo"
               width={180}
               height={33.6}
             />
-            </div>
             <div className="flexjustify-center  items-center w-128 h-27">
             <div  className="flex bg-shadow w-128 h-27 rounded-t-md" >
               <div >
@@ -102,13 +100,6 @@ export default function Home() {
     <form>
       <label>
         <input type="text" className="border rounded-md mt-2 w-552px mx-12 h-46px border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-        <Image
-              src="/question.svg"
-              alt="question"
-              width={18.33}
-              height={18.33}
-              className="relative top-421.83px"
-            />
       </label>
     </form>
     <Image
@@ -122,13 +113,6 @@ export default function Home() {
       <label>
         <input type="text" className="border rounded-md mt-2 w-552px mx-12 h-46px border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
         
-            <Image
-              src="/question.svg"
-              alt="question"
-              width={18.33}
-              height={18.33}
-              className="relative top-421.83px"
-            />
             
               </label>
               </form>
@@ -152,14 +136,6 @@ export default function Home() {
             <form>
       <label>
         <input type="text" className="border rounded-md mt-2 w-268px h-46px ml-12 border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-        
-        <Image
-              src="/question.svg"
-              alt="question"
-              width={18.33}
-              height={18.33}
-              className="relative top-421.83px"
-            />
             
         </label>
         </form>
@@ -193,14 +169,7 @@ export default function Home() {
         <form>
         <label>
         <input type="text" className="border rounded-md mt-2 w-268px h-46px -ml-0.5 border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-        
-        <Image
-              src="/question.svg"
-              alt="question"
-              width={18.33}
-              height={18.33}
-              className="relative top-421.83px"
-            />
+
             
        </label>
        </form>
