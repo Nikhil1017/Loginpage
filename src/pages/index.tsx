@@ -8,7 +8,7 @@ export default function Home() {
     <>
     <main
     className="flex  h-screen w-screen items-center justify-center">
-      <items className="w-128 h-128 bg-slate-200">
+      <main1 className="w-128 h-128 bg-slate-200">
         <div   className='flex flex-col items-center h-20' >
              <Image
               src="/logo.svg"
@@ -226,7 +226,7 @@ export default function Home() {
             /> 
               </button>
        </div>
-       </items>
+       </main1>
        </main>
        </>
   )
