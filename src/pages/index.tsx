@@ -5,7 +5,7 @@ export default function Home() {
   const [inputValue, setInputValue] = useState('');
   const [checked, setChecked] = useState(false);
   return (
-      <div className=" flex  flex-col w-128 h-128 justify-center items-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className=" flex  flex-col w-128 h-128 justify-center items-center ">
              <Image
               src="/logo.svg"
               alt="Lookscout Logo"
@@ -88,7 +88,7 @@ export default function Home() {
 
                </div >
                </div>
-              <div className="flex flex flex-col w-128 h-128 p-x12">
+              <div className="flex  flex-col w-128 h-128 p-x12">
             <Image
               src="/nametxt.svg"
               alt="name"
