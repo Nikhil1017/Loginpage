@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div
     className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <div className=" flex flex-col w-128 h-128 justify-center items-center">
+      <div className=" flex  flex-col w-128 h-128 justify-center items-center">
              <Image
               src="/logo.svg"
               alt="Lookscout Logo"
@@ -135,7 +135,7 @@ export default function Home() {
             />
             <form>
       <label>
-        <input type="text" className="border rounded-md mt-2 w-268px h-46px ml-12 border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+        <input type="text" className=" flex border rounded-md mt-2 w-268px h-46px ml-12 border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
             
         </label>
         </form>
