@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     fontSize: {
       '15px':['15px','22px'],
+      '14px':['14px','20px'],
     },
     letterSpacing: {
       'minus0.1px':'-0.1px',
@@ -16,19 +17,26 @@ module.exports = {
     extend: {
       width: {
         '128':'648px',
+        '96px':'96px',
         '164':'180px',
         '196':'100%',
         '552px':'552px',
         '268px':'268px',
+        '343px':'343px',
+        '295px':'295px',
+        '133px':'133px',
+
         
       },
       height: {
         '27':'108px',
-        '128':'704px',
+        '128':'597px',
         '164':'33.6px',
         '196':'100%',
         '46px':'46px',
         '5.29px':'5.29px',
+        '84px':'84px',
+        '774px':'774px',
       },
       margin:{
         '35.5px':'35.5px',
@@ -38,6 +46,9 @@ module.exports = {
         '46px':'46px',
         '504px':'504px',
         '7px':'7px',
+        '15px':'15px',
+        '39.2px':'39.2px',
+        '11.5px':'11.5px',
   
     },
     spacing:{
@@ -53,6 +64,8 @@ module.exports = {
       'shadow':'#FAFBFC',
       'boxshadow':'#DAE0E6',
       'gray-1':'#272D37',
+      'blue-1':'#437EF7',
+      'text-gray':'#5F6D7E',
     },
   },
   plugins: [],
