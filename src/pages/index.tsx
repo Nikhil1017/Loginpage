@@ -2,7 +2,10 @@ import Image from 'next/image'
 import React, { useState } from 'react';
 
 export default function Home() {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue1, setInputValue1] = useState('');
+  const [inputValue2, setInputValue2] = useState('');
+  const [inputValue3, setInputValue3] = useState('');
+  const [inputValue4, setInputValue4] = useState('');
   const [checked, setChecked] = useState(false);
   return (
     <div className="flex w-screen h-screen justify-center items-center ">
@@ -77,7 +80,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px sm:mt-8 ml-12 mt-4">Name</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 placeholder:text-gray-1" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -90,7 +93,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px ml-12">Email*</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow pl-3.5" value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -107,7 +110,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-12 ml-6">Password*</span>
             <form>
       <label>
-        <input type="text" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+        <input type="text" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow pl-3.5" value={inputValue3} onChange={(e) => setInputValue3(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -122,12 +125,12 @@ export default function Home() {
             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-4 ml-6">Confirm Password*</span>
         <form>
         <label>
-        <input type="text" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+        <input type="text" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow pl-3.5 plac" value={inputValue4} onChange={(e) => setInputValue4(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
         height={20}
-        className="absolute sm: ml-255px sm:-mt-8 ml-314px -mt-8"/>
+        className="absolute sm:ml-255px sm:-mt-8 ml-314px -mt-8"/>
 
             
        </label>
