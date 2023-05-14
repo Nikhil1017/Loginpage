@@ -25,8 +25,13 @@ module.exports = {
         '343px':'343px',
         '295px':'295px',
         '133px':'133px',
+        '299px':'299px',
+
 
         
+      },
+      padding:{
+        '3px':'3px',
       },
       height: {
         '27':'108px',
@@ -37,6 +42,7 @@ module.exports = {
         '5.29px':'5.29px',
         '84px':'84px',
         '774px':'774px',
+        '50px':'50px',
       },
       margin:{
         '35.5px':'35.5px',
@@ -49,6 +55,10 @@ module.exports = {
         '15px':'15px',
         '39.2px':'39.2px',
         '11.5px':'11.5px',
+        '18.33px':'18.33px',
+        '9.33px':'9.33px',
+        '5px':'5px',
+        '19px':'19px',
   
     },
     spacing:{
@@ -66,6 +76,7 @@ module.exports = {
       'gray-1':'#272D37',
       'blue-1':'#437EF7',
       'text-gray':'#5F6D7E',
+      'white-1':'#FFFFFF',
     },
   },
   plugins: [],
