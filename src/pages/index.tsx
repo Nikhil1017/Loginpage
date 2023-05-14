@@ -134,7 +134,7 @@ export default function Home() {
               </button>
        <button>
             <div className="flex flex-row w-295px h-46px justify-center items-center text-white-1  bg-blue-1 rounded-md sm:hidden ml-6 mt-3 ">
-            <span className=" font-sans font-semibold text-15px">Next ></span>  
+            <span className=" font-sans font-semibold text-15px">Next</span>  
             </div>
         
         </button>
