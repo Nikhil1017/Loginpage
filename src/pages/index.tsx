@@ -83,6 +83,7 @@ export default function Home() {
         <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 placeholder:text-gray-1" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
         <Image
         src="question.svg"
+        alt="question"
         width={20}
         height={20}
         className="absolute sm:ml-568px sm:-mt-12 ml-313px -mt-12"/>
@@ -97,6 +98,7 @@ export default function Home() {
         <Image
         src="question.svg"
         width={20}
+        alt="question"
         height={20}
         className="absolute sm:ml-568px sm:-mt-8 ml-313px -mt-8"/>
             
@@ -114,6 +116,7 @@ export default function Home() {
         <Image
         src="question.svg"
         width={20}
+        alt="question"
         height={20}
         className="absolute sm:ml-286px sm:-mt-8 ml-314px -mt-8"/>
             
@@ -129,6 +132,7 @@ export default function Home() {
         <Image
         src="question.svg"
         width={20}
+        alt="question"
         height={20}
         className="absolute sm:ml-255px sm:-mt-8 ml-314px -mt-8"/>
 
