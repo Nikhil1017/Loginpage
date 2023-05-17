@@ -81,7 +81,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px sm:mt-8 ml-12 mt-4 dark:text-white-dark">Name</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Name" type="text1" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
+        <input type="text1" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Name" type="text1" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
         <Image
         src="question.svg"
         alt="question"
@@ -95,7 +95,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px ml-12 dark:text-white-dark">Email*</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Email Address " type="text2" value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} />
+        <input type="text2" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Email Address " type="text2" value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -113,7 +113,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-12 ml-6 dark:text-white-dark">Password*</span>
             <form>
       <label>
-        <input type="text" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Password" type="text3" value={inputValue3} onChange={(e) => setInputValue3(e.target.value)} />
+        <input type="text3" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Password" type="text3" value={inputValue3} onChange={(e) => setInputValue3(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -129,7 +129,7 @@ export default function Home() {
             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-4 ml-6 dark:text-white-dark">Confirm Password*</span>
         <form>
         <label>
-        <input type="text" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Confirm Password" type="text4" value={inputValue4} onChange={(e) => setInputValue4(e.target.value)} />
+        <input type="text3" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Confirm Password" type="text4" value={inputValue4} onChange={(e) => setInputValue4(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
