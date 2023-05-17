@@ -1,5 +1,6 @@
-import Image from 'next/image'
+import Image from 'next/image';
 import React, { useState } from 'react';
+import DarkModeToggle from '../components/theme.tsx';
 
 export default function Home() {
   const [inputValue1, setInputValue1] = useState('');
@@ -8,10 +9,10 @@ export default function Home() {
   const [inputValue4, setInputValue4] = useState('');
   const [checked, setChecked] = useState(false);
   return (
-    <div className="flex w-screen h-screen justify-center items-center ">
-      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-11">
+    <div className="flex w-screen h-screen justify-center items-center dark:bg-outside-black">
+      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-11 dark:bg-inside-black">
         <div className="flex flex-row justify-center">
-        <Image
+           <Image
               src="/logo.svg"
               alt="Lookscout Logo"
               width={180}
@@ -19,7 +20,7 @@ export default function Home() {
               className="sm:mb-7 mb-3"
             />
             </div>
-            <div className="flex flex-col bg-shadow sm:w-128 sm:h-24  w-343px h-19 rounded-t-md flex-initial">
+            <div className="flex flex-col bg-shadow sm:w-128 sm:h-24  w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black">
             <div className="flex flex-row">
             <Image
                src="/account.svg"
@@ -77,10 +78,10 @@ export default function Home() {
               <div className="flex flex-col items-center rounded-b-md">
                 <div className="div">
 
-             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px sm:mt-8 ml-12 mt-4">Name</span>
+             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px sm:mt-8 ml-12 mt-4 dark:text-white-dark">Name</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 " placeholder="Name" type="text" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
+        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Name" type="text1" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
         <Image
         src="question.svg"
         alt="question"
@@ -91,10 +92,10 @@ export default function Home() {
     </form>
     </div>
     <div className="div">
-             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px ml-12">Email*</span>
+             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px ml-12 dark:text-white-dark">Email*</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow pl-3.5 " placeholder="Email Address " type="text" value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} />
+        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Email Address " type="text2" value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -104,15 +105,15 @@ export default function Home() {
             
               </label>
               </form>
-             <span className="flex font-sans font-normal  not-italic tracking-minus0.1px text-text-gray text-14px  ml-12 mt-2.5">Please input a real Email Address</span>
+             <span className="flex font-sans font-normal  not-italic tracking-minus0.1px text-text-gray text-14px  ml-12 mt-2.5 dark:text-gray-dark">Please input a real Email Address</span>
             </div> 
             </div>
     <div className="flex flex-col sm:flex-row">
       <div>
-             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-12 ml-6">Password*</span>
+             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-12 ml-6 dark:text-white-dark">Password*</span>
             <form>
       <label>
-        <input type="text" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow pl-3.5 " placeholder="Password" type="text" value={inputValue3} onChange={(e) => setInputValue3(e.target.value)} />
+        <input type="text" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Password" type="text3" value={inputValue3} onChange={(e) => setInputValue3(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -122,13 +123,13 @@ export default function Home() {
             
         </label>
         </form>
-            <span className="flex font-sans font-normal  not-italic tracking-minus0.1px text-text-gray text-14px sm:ml-12 ml-6 mt-2.5">Please enter your password</span>
+            <span className="flex font-sans font-normal  not-italic tracking-minus0.1px text-text-gray text-14px sm:ml-12 ml-6 mt-2.5 dark:text-gray-dark">Please enter your password</span>
             </div>
         <div>
-            <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-4 ml-6">Confirm Password*</span>
+            <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-4 ml-6 dark:text-white-dark">Confirm Password*</span>
         <form>
         <label>
-        <input type="text" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow pl-3.5 " placeholder="Confirm Password" type="text" value={inputValue4} onChange={(e) => setInputValue4(e.target.value)} />
+        <input type="text" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow pl-3.5 placeholder:dark:text-white-dark dark:border-border-dark" placeholder="Confirm Password" type="text4" value={inputValue4} onChange={(e) => setInputValue4(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -139,7 +140,7 @@ export default function Home() {
             
        </label>
        </form>
-            <span className="flex font-sans font-normal  not-italic tracking-minus0.1px text-text-gray text-14px sm:ml-4 ml-6 mt-2.5">Passwords need to match</span>       
+            <span className="flex font-sans font-normal  not-italic tracking-minus0.1px text-text-gray text-14px sm:ml-4 ml-6 mt-2.5 dark:text-gray-dark">Passwords need to match</span>       
        </div>
        </div>
        <div className="flex">
@@ -151,9 +152,9 @@ export default function Home() {
         onChange={() => setChecked(!checked)}
       />
     </label>
-    <span className="font-sans font-medium text-base not-italic tracking-minus0.1px text-gray-1 ml-2 mt-19px">I accept the Terms and Privacy Policy</span>
+    <span className="font-sans font-medium text-base not-italic tracking-minus0.1px text-gray-1 ml-2 mt-19px dark:text-white-dark">I accept the Terms and Privacy Policy</span>
     </div>   
-       <button className="">
+       <button className="dark:bg-bar-black">
        <Image
               src="nextbutton.svg"
               alt="name"
@@ -163,7 +164,7 @@ export default function Home() {
               
             /> 
               </button>  
-       <button>
+       <button className="dark:bg-bar-black">
             <div className="flex flex-row w-295px h-46px justify-center items-center text-white-1  bg-blue-1 rounded-md sm:hidden ml-6 mt-3 ">
             <span className=" font-sans font-semibold text-15px">Next</span>  
             <Image
@@ -175,6 +176,7 @@ export default function Home() {
             />
             </div>
         </button>
+        <DarkModeToggle/>
        </div >
        </div>
   )
