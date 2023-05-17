@@ -63,7 +63,7 @@ export default function Home() {
                />
             </div>
             <div className="flex flex-row">          
-               <span className="font-sans font-semibold  not-italic tracking-minus0.1px text-blue-1 text-14px pl-19.3px sm:ml-35.5px mb-2">Account</span>         
+               <span className="font-sans font-semibold  not-italic tracking-minus0.1px text-blue-1 text-14px pl-19.3px sm:pl-0 sm:ml-35.5px mb-2">Account</span>         
                
                <span className="font-sans font-semibold  not-italic tracking-minus0.1px text-text-gray sm:ml-0  text-14px sm:pl-117px pl-27px">Personal</span>
               
@@ -80,7 +80,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px sm:mt-8 ml-12 mt-4">Name</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 placeholder:text-gray-1" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
+        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 " placeholder="Name" type="text" value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
         <Image
         src="question.svg"
         alt="question"
@@ -94,7 +94,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px ml-12">Email*</span>
     <form>
       <label>
-        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow pl-3.5" value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} />
+        <input type="text" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px border-boxshadow pl-3.5 " placeholder="Email Address " type="text" value={inputValue2} onChange={(e) => setInputValue2(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -112,7 +112,7 @@ export default function Home() {
              <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-12 ml-6">Password*</span>
             <form>
       <label>
-        <input type="text" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow pl-3.5" value={inputValue3} onChange={(e) => setInputValue3(e.target.value)} />
+        <input type="text" className=" flex border rounded-md mt-2 w-295px sm:w-268px h-46px sm:ml-12 ml-6 border-boxshadow pl-3.5 " placeholder="Password" type="text" value={inputValue3} onChange={(e) => setInputValue3(e.target.value)} />
         <Image
         src="question.svg"
         width={20}
@@ -128,7 +128,7 @@ export default function Home() {
             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px mt-4 sm:ml-4 ml-6">Confirm Password*</span>
         <form>
         <label>
-        <input type="text" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow pl-3.5 plac" value={inputValue4} onChange={(e) => setInputValue4(e.target.value)} />
+        <input type="text" className="flex border rounded-md sm:ml-4 ml-6  mt-2 w-295px h-46px sm:w-268px  border-boxshadow pl-3.5 " placeholder="Confirm Password" type="text" value={inputValue4} onChange={(e) => setInputValue4(e.target.value)} />
         <Image
         src="question.svg"
         width={20}

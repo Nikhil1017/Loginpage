@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkmode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -7,10 +8,6 @@ module.exports = {
   ],
   
   theme: {
-    fontSize: {
-      '15px':['15px','22px'],
-      '14px':['14px','20px'],
-    },
     letterSpacing: {
       'minus0.1px':'-0.1px',
     },
@@ -30,6 +27,12 @@ module.exports = {
 
         
       },
+
+      fontSize: {
+        '15px':['15px','22px'],
+        '14px':['14px','20px'],
+      },
+
       padding:{
         '3px':'3px',
         '13px':'13px',
