@@ -78,6 +78,7 @@ module.exports = {
         '255px':'255px',
         '313px':'313px',
         '314px':'289px',
+        '314.5px':'314.5px',
   
     },
     spacing:{
@@ -88,8 +89,7 @@ module.exports = {
   fontFamily: {
     sans: ['Inter', 'sans-serif'],
   },
-    },
-    colors:{
+  colors:{
       'shadow':'#FAFBFC',
       'boxshadow':'#DAE0E6',
       'gray-1':'#272D37',
@@ -106,6 +106,7 @@ module.exports = {
       'border-dark':'#2E3545',
       'inputbox-dark':'#2E3545',
 
+    },
     },
   },
   plugins: [],

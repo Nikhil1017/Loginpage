@@ -10,25 +10,27 @@ export default function Home() {
   const [checked, setChecked] = useState(false);
   return (
     <>
-    <div className="flex flex-row justify-center mt-4 ">
+           
+           
+    <div className="flex w-screen  justify-center items-center dark:sm:bg-outside-black sm:ml-0 ml-2.5 ">
+      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-0   dark:bg-inside-black rounded-md ">
+      <DarkModeToggle/>
+      <div className="flex flex-row justify-center mt-6 dark:bg-darkbg-black scroll-py-24">
            <Image
               src="/logo.svg"
               alt="Lookscout Logo"
               width={180}
-              height={33.6}
-              className="sm:mb-7  mt-0.5 mb-5 dark:hidden sm:mt-4"
+              height={30}
+              className="sm:mb-7  mt-0.5 mb-6 dark:hidden sm:mt-4"
             />
            <Image
               src="/logodark.svg"
               alt="Lookscout Logo dark"
               width={180}
-              height={33.6}
-              className="sm:mb-5 mt-0.5 mb-5 hidden dark:block sm:mt-4"
+              height={30}
+              className="sm:mb-5 mt-0.5 mb-6 hidden dark:block sm:mt-4"
             />
-             <DarkModeToggle/>
-            </div>
-    <div className="flex w-screen  justify-center items-center dark:sm:bg-outside-blac sm:ml-0 ml-2.5">
-      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-0   dark:bg-inside-black rounded-md">
+             </div>
         
             <div className="flex flex-col bg-shadow sm:w-128 sm:h-18 w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black ">
             <div className="flex flex-row">
@@ -174,7 +176,7 @@ export default function Home() {
               
             /> 
               </button>  
-       <button className="dark:bg-bar-black">
+       <button className="dark:bg-bar-black rounded-b-md">
             <div className="flex flex-row w-295px h-46px justify-center items-center text-white-1  bg-blue-1 rounded-md sm:hidden ml-6 mb-4 ">
             <span className=" font-sans font-semibold text-15px">Next</span>  
             <Image
