@@ -10,24 +10,24 @@ export default function Home() {
   const [checked, setChecked] = useState(false);
   return (
     <>
-    <div className="flex flex-row justify-center mt-6">
+    <div className="flex flex-row justify-center mt-4">
            <Image
               src="/logo.svg"
               alt="Lookscout Logo"
               width={180}
               height={33.6}
-              className="sm:mb-7 mb-5 dark:hidden sm:mt-4"
+              className="sm:mb-7  mt-0.5 mb-5 dark:hidden sm:mt-4"
             />
            <Image
               src="/logodark.svg"
               alt="Lookscout Logo dark"
               width={180}
               height={33.6}
-              className="sm:mb-5 mb-5 hidden dark:block sm:mt-4"
+              className="sm:mb-5 mt-0.5 mb-5 hidden dark:block sm:mt-4"
             />
              <DarkModeToggle/>
             </div>
-    <div className="flex w-screen h-screen justify-center items-center dark:bg-outside-black">
+    <div className="flex w-screen  justify-center items-center dark:bg-outside-black">
       <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-0   dark:bg-inside-black rounded-md">
         
             <div className="flex flex-col bg-shadow sm:w-128 sm:h-18 w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black">
@@ -175,7 +175,7 @@ export default function Home() {
             /> 
               </button>  
        <button className="dark:bg-bar-black">
-            <div className="flex flex-row w-295px h-46px justify-center items-center text-white-1  bg-blue-1 rounded-md sm:hidden ml-6 mt-3 ">
+            <div className="flex flex-row w-295px h-46px justify-center items-center text-white-1  bg-blue-1 rounded-md sm:hidden ml-6 mb-4 ">
             <span className=" font-sans font-semibold text-15px">Next</span>  
             <Image
                src="arrow.svg"
