@@ -9,24 +9,27 @@ export default function Home() {
   const [inputValue4, setInputValue4] = useState('');
   const [checked, setChecked] = useState(false);
   return (
-    <div className="flex w-screen h-screen justify-center items-center dark:bg-outside-black">
-      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 dark:bg-inside-black rounded-lg">
-        <div className="flex flex-row justify-center">
+    <>
+    <div className="flex flex-row justify-center mt-6">
            <Image
               src="/logo.svg"
               alt="Lookscout Logo"
               width={180}
               height={33.6}
-              className="sm:mb-7 mb-5 dark:hidden sm:mt-3"
+              className="sm:mb-7 mb-5 dark:hidden sm:mt-4"
             />
            <Image
               src="/logodark.svg"
               alt="Lookscout Logo dark"
               width={180}
               height={33.6}
-              className="sm:mb-5 mb-3 hidden dark:block sm:mt-3"
+              className="sm:mb-5 mb-5 hidden dark:block sm:mt-4"
             />
+             <DarkModeToggle/>
             </div>
+    <div className="flex w-screen h-screen justify-center items-center dark:bg-outside-black">
+      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-0   dark:bg-inside-black rounded-md">
+        
             <div className="flex flex-col bg-shadow sm:w-128 sm:h-18 w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black">
             <div className="flex flex-row">
             <Image
@@ -85,7 +88,7 @@ export default function Home() {
               <div className="flex flex-col items-center rounded-b-md">
                 <div className="div">
 
-             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px sm:mt-8 ml-12 mt-4 dark:text-white-dark">Name</span>
+             <span className="flex font-sans font-medium  not-italic tracking-minus0.1px text-gray-1 text-14px sm:mt-5 ml-12 mt-4 dark:text-white-dark">Name</span>
     <form>
       <label>
         <input type="text1" className="flex border rounded-md mt-2 w-295px sm:w-552px mx-12 h-46px  border-boxshadow max mb-4 pl-3.5 placeholder:dark:text-white-dark dark:bg-inputbox-black dark:border-border-dark" placeholder="Name"  value={inputValue1} onChange={(e) => setInputValue1(e.target.value)} />
@@ -154,20 +157,20 @@ export default function Home() {
     <label className="sm:ml-12 ml-6">
       <input
         type="checkbox"
-        className="mt-5 h-5 w-5 accent-blue-1 hover:cursor-pointer"
+        className="mt-5 h-18.5px w-18.5px accent-blue-1 hover:cursor-pointer"
         checked={checked}
         onChange={() => setChecked(!checked)}
       />
     </label>
-    <span className="font-sans font-medium text-base not-italic tracking-minus0.1px text-gray-1 ml-2 mt-19px dark:text-white-dark">I accept the Terms and Privacy Policy</span>
+    <span className="font-sans font-medium text-base not-italic tracking-minus0.1px text-gray-1 ml-2 mt-19px mb-2 dark:text-white-dark">I accept the Terms and Privacy Policy</span>
     </div>   
-       <button className="dark:bg-bar-black">
+       <button className="dark:bg-bar-black py-2">
        <Image
               src="nextbutton.svg"
               alt="name"
               width={100}
               height={50}
-              className="sm:mt-4 sm:ml-504px hidden sm:block "
+              className="sm:mt-0 sm:ml-504px hidden sm:block"
               
             /> 
               </button>  
@@ -183,8 +186,8 @@ export default function Home() {
             />
             </div>
         </button>
-        <DarkModeToggle/>
        </div >
        </div>
+       </>
   )
 }

@@ -6,7 +6,7 @@ function DarkModeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="absolute right-6"
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="absolute right-5 top-6 sm:top-8 sm:right-10"
     >
       <Image
       width={30}
