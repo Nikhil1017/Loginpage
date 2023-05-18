@@ -10,7 +10,7 @@ export default function Home() {
   const [checked, setChecked] = useState(false);
   return (
     <>
-    <div className="flex flex-row justify-center mt-4">
+    <div className="flex flex-row justify-center mt-4 ">
            <Image
               src="/logo.svg"
               alt="Lookscout Logo"
@@ -27,10 +27,10 @@ export default function Home() {
             />
              <DarkModeToggle/>
             </div>
-    <div className="flex w-screen  justify-center items-center dark:sm:bg-outside-black">
+    <div className="flex w-screen  justify-center items-center dark:sm:bg-outside-blac sm:ml-0 ml-2.5">
       <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-0   dark:bg-inside-black rounded-md">
         
-            <div className="flex flex-col bg-shadow sm:w-128 sm:h-18 w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black">
+            <div className="flex flex-col bg-shadow sm:w-128 sm:h-18 w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black ">
             <div className="flex flex-row">
             <Image
                src="/account.svg"
