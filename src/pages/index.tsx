@@ -29,9 +29,9 @@ export default function Home() {
                height={32}
                className="flex sm:pt-6 ml-31px pt-3 sm:ml-12 sm:mr-1 mr-0.5"
                />
-               <Image src="/line.svg" alt="line" width={133}
+               <Image src="/line.svg" alt="line1" width={133}
                height={0} className="sm:w-133px w-12 sm:pt-6 hidden sm:block" />  
-               <Image src="smallline.svg" alt="line" width={133}
+               <Image src="smallline.svg" alt="line2" width={133}
                height={0} className="sm:w-133px w-12 sm:pt-6 sm:hidden pt-13px" />  
                <Image
                src="/personal.svg"
@@ -40,9 +40,9 @@ export default function Home() {
                height={32}
                className="flex sm:pt-6 pt-3 sm:mx-1 mx-0.5 "
                />
-                <Image src="/line.svg" alt="line" width={133}
+                <Image src="/line.svg" alt="line3" width={133}
                height={0} className="sm:w-133px w-12 sm:pt-6 hidden sm:block" />  
-               <Image src="smallline.svg" alt="line" width={133}
+               <Image src="smallline.svg" alt="line4" width={133}
                height={0} className="sm:w-133px w-12 sm:pt-6 sm:hidden pt-13px" />  
                 <Image
                src="/billing.svg"
@@ -51,9 +51,9 @@ export default function Home() {
                height={32}
                className="flex sm:pt-6 pt-3 sm:mx-1 mx-0.5"
                />
-               <Image src="/line.svg" alt="line" width={133}
+               <Image src="/line.svg" alt="line5" width={133}
                height={0} className="sm:w-133px w-12 sm:pt-6 hidden sm:block" />  
-               <Image src="smallline.svg" alt="line" width={133}
+               <Image src="smallline.svg" alt="line6" width={133}
                height={0} className="sm:w-133px w-12 sm:pt-6 sm:hidden pt-13px" />  
                 <Image
                src="/done.svg"
