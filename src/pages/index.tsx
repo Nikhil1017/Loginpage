@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import DarkModeToggle from '../components/theme.tsx';
+import DarkModeToggle from '../components/theme';
 
 export default function Home() {
   const [inputValue1, setInputValue1] = useState('');
