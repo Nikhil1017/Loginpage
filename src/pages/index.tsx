@@ -27,7 +27,7 @@ export default function Home() {
             />
              <DarkModeToggle/>
             </div>
-    <div className="flex w-screen  justify-center items-center dark:bg-outside-black">
+    <div className="flex w-screen  justify-center items-center dark:sm:bg-outside-black">
       <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-0   dark:bg-inside-black rounded-md">
         
             <div className="flex flex-col bg-shadow sm:w-128 sm:h-18 w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black">
