@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
                 
-    <div className="flex flex-col w-screen  justify-center items-center dark:sm:bg-outside-black sm:ml-0 ml-2.5 ">
-    <div className="flex sm:w-128 w-343px flex-row justify-center mt-6 ">
+    <div className="flex flex-col w-screen  justify-center items-center sm:ml-0 ml-2.5 h-screen">
+    <div className="flex sm:w-screen w-343px flex-row justify-center mt-6 sm:absolute sm:top-1 sm:mt-3">
       <DarkModeToggle/>
            <Image
               src="/logo.svg"
@@ -29,9 +29,9 @@ export default function Home() {
               className="sm:mb-5 mt-0.5 mb-6 hidden dark:block sm:mt-4"
             />
              </div>
-      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-0   dark:bg-inside-black rounded-md ">
+      <div className="flex flex-col sm:w-128 w-343px sm:h-128 sm:mb-6 sm:mt-6   dark:bg-inside-black rounded-md bg-white">
             <div className="flex flex-col bg-shadow sm:w-128 sm:h-18 w-343px h-19 rounded-t-md flex-initial dark:bg-bar-black ">
-            <div className="flex flex-row">
+            <div className="flex flex-row sm:mt-5">
             <Image
                src="/account.svg"
                alt="account"

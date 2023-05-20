@@ -6,17 +6,17 @@ function DarkModeToggle() {
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="absolute ml-314.5px mt-1 "
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="absolute ml-330px sm:right-10 sm:top-4"
     >
       <Image
-      width={32}
-      height={32}
+      width={35}
+      height={36}
       src="/darkmode.svg"
       alt="dark mode"
       className="hidden dark:block"
       />
       <Image
-      width={30}
+      width={35}
       height={30}
       src="/lightmode.svg"
       alt="light mode"

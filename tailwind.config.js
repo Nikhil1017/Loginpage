@@ -78,7 +78,7 @@ module.exports = {
         '255px':'255px',
         '313px':'313px',
         '314px':'289px',
-        '314.5px':'314.5px',
+        '330px':'330px',
   
     },
     spacing:{
